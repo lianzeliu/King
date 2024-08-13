@@ -1,3 +1,10 @@
+#
+# Copyright (C) 2022 OpenWrt.org
+#
+# This is free software, licensed under the GNU General Public License v2.
+# See /LICENSE for more information.
+#
+
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=ath11k-firmware
@@ -15,7 +22,32 @@ PKG_MAINTAINER:=Robert Marko <robimarko@gmail.com>
 
 include $(INCLUDE_DIR)/package.mk
 
-	@@ -51,40 +51,26 @@ define Build/Compile
+RSTRIP:=:
+STRIP:=:
+
+define Package/ath11k-firmware-default
+  SECTION:=firmware
+  CATEGORY:=Firmware
+  URL:=$(PKG_SOURCE_URL)
+  DEPENDS:=
+endef
+
+define Package/ath11k-firmware-ipq6018
+$(Package/ath11k-firmware-default)
+  TITLE:=IPQ6018 ath11k firmware
+endef
+
+define Package/ath11k-firmware-ipq8074
+$(Package/ath11k-firmware-default)
+  TITLE:=IPQ8074 ath11k firmware
+endef
+
+define Package/ath11k-firmware-qcn9074
+$(Package/ath11k-firmware-default)
+  TITLE:=QCN9074 ath11k firmware
+endef
+
+define Build/Compile
 
 endef
 
