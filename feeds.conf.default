@@ -5,3 +5,4 @@ src-git telephony https://git.openwrt.org/feed/telephony.git
 src-git nss_packages https://github.com/qosmio/nss-packages.git
 src-git sqm_scripts_nss https://github.com/qosmio/sqm-scripts-nss.git
 src-git helloworld https://github.com/fw876/helloworld.git
+src-git adguardhome https://github.com/rufengsuixing/luci-app-adguardhome
