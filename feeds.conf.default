@@ -10,5 +10,4 @@ src-git mosdns https://github.com/sbwml/luci-app-mosdns.git
 src-git luciwrtbwmon https://github.com/brvphoenix/luci-app-wrtbwmon.git
 src-git wrtbwmon https://github.com/brvphoenix/wrtbwmon.git
 src-git helloworld https://github.com/lianzeliu/helloworld.git
-
-src-git qbittorrent https://github.com/lianzeliu/qbittorrent
+src-git qbittorrent https://github.com/lianzeliu/qb
